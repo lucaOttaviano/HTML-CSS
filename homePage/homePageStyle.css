@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+}
+
+html {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* top navbar */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: red;
+    width: 100%;
+    height: 100px;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+}
+
+
+/* the main container (no footer) */
+
+#pageContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-direction: row;
+    gap: 20px;
+    width: 90%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+
+/* preferences sidebar */
+
+aside {
+    background-color: green;
+    width: 25%;
+    height: auto;
+}
+
+
+/* categories section */
+
+#categoriesTitle {
+    margin-left: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* ratings section */
+
+#ratingsTitle {
+    margin-left: 20px;
+}
+
+#ratingsDiv ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#ratingsDiv ul div {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* price title */
+
+#priceTitle {
+    margin-left: 20px;
+}
+
+#pricesContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#pricesContainer div {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+
+/* the product's cards main container */
+
+#cardsDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 75%;
+    height: auto;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cards {
+    width: 35%;
+    height: 450px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+}
+
+.imagesContainers {
+    width: 100%;
+    height: 50%;
+    background: url(ritagliata.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    background-color: green;
+}
+
+.descriptionsTitles {
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descriptionsAuthors {
+    width: 100%;
+    height: 50px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descriptionsPrice {
+    width: 100%;
+    height: 50px;
+}
