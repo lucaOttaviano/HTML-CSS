@@ -1,235 +1,286 @@
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        
-        html {
-            height: 100%;
-            width: 100%;
-            margin: 0;
-        }
-        
-        a {
-            text-decoration: none;
-            color: #202020;
-        }
-        
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            color: #202020;
-            background: url(ab.jpeg);
-            backdrop-filter: blur(10px);
-        }
-        
-        input {
-            padding-left: 10px;
-            border-radius: 5px;
-            border: solid 1px #202020;
-        }
-        
-        button {
-            border-radius: 5px;
-            border: solid 1px #202020;
-        }
-        
-        #bottomLinks div p {
-            cursor: pointer;
-        }
-        
-        #bottomLinks div input {
-            cursor: pointer;
-        }
-        
-        #bottomLinks div label {
-            cursor: pointer;
-        }
-        
-        .fa {
-            font-size: 50px;
-        }
-        /* socials */
-        
-        #socialsDiv1 {
-            position: absolute;
-            margin-top: 0px;
-            left: 15px;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        #socialsDiv1 a {
-            font-size: 30px;
-            color: #d0d0d0;
-            transition: 0.1s;
-            display: flex;
-            justify-content: center;
-            border-radius: 5px;
-            padding: 5px;
-        }
-        
-        #socialsDiv1 a:hover {
-            color: #202020;
-            background-color: #d0d0d0;
-        }
-        /*general card*/
-        
-        #loginCard {
-            width: 650px;
-            height: 500px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-size: cover;
-            border-radius: 6px;
-            background: url(ab.jpeg);
-            background-size: cover;
-        }
-        /* white part */
-        
-        #userCredentialsDiv {
-            border-radius: 5px;
-            background-color: #d0d0d0;
-            backdrop-filter: opacity(50%);
-            width: 70%;
-            height: 85%;
-            margin-left: 25px;
-        }
-        /* button home */
-        
-        #homeLink {
-            height: 22%;
-        }
-        
-        #homeLink div {
-            margin-top: 10px;
-            margin-left: 10px;
-            display: flex;
-            flex-direction: row;
-        }
-        
-        #homeButton {
-            width: 40px;
-            height: 35px;
-            font-size: 25px;
-            transition: 0.1s;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        #homeButton:hover {
-            background-color: #202020;
-            color: #d0d0d0;
-            border-radius: 10px;
-        }
-        /* all that isn't home button */
-        
-        #allButNoHome {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        /* user and pswd input fields */
-        
-        #inputLinks {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 50px;
-        }
-        
-        #usernameInput {
-            height: 50px;
-            width: 300px;
-            background-color: #202020;
-            color: white;
-            box-shadow: 3px 3px 5px 1px #404040;
-            width: 300px;
-            height: 50px;
-        }
-        
-        #inputLinks>#div2 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        #passwordInput {
-            height: 50px;
-            width: 190px;
-            background-color: #202020;
-            color: white;
-            box-shadow: 3px 3px 5px 1px #404040;
-        }
-        
-        #img1 {
-            width: 6.5%;
-            margin-left: 10px;
-            border: solid 1px #DFDFDF;
-            background-color: #DFDFDF;
-            padding: 3px;
-            border-radius: 10px;
-            box-shadow: 3px 3px 5px 1px #d0d0d0;
-            filter: invert(100%);
-            transition: 0.1s;
-            cursor: pointer;
-        }
-        
-        #img1:hover {
-            background-color: #d0d0d0;
-            border: solid 1px #d0d0d0;
-            box-shadow: 3px 3px 5px 1px #404040;
-            filter: invert(0%);
-        }
-        /* forgot pswd and remember me buttons */
-        
-        #bottomLinks {
-            display: flex;
-            flex-direction: row;
-            gap: 50px;
-            margin-top: 50px;
-        }
-        /* login button */
-        
-        #loginButtonDiv {
-            width: 30%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
-            border-radius: 10px;
-        }
-        
-        #loginButtonDiv div {
-            border-radius: 10px;
-            cursor: pointer;
-            background-color: #181818;
-            box-shadow: 3px 3px 5px 1px #101010;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            transition: 0.2s;
-        }
-        
-        #loginButtonDiv div:hover {
-            background-color: #ab5c16;
-        }
-        
-        #loginButtonDiv div:hover p {
-            color: black;
-        }
-        
-        #loginButtonDiv div p {
-            color: white;
-            font-size: 15px;
-            padding: 10px;
-            border-radius: 10px;
-        }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: #202020;
+    background: url(ab.jpeg);
+    backdrop-filter: blur(10px);
+}
+
+input {
+    padding-left: 10px;
+    border-radius: 5px;
+    border: solid 1px #202020;
+}
+
+button {
+    border-radius: 5px;
+    border: solid 1px #202020;
+}
+
+#bottomLinks div p {
+    cursor: pointer;
+}
+
+#bottomLinks div input {
+    cursor: pointer;
+}
+
+#bottomLinks div label {
+    cursor: pointer;
+}
+
+.fa {
+    font-size: 50px;
+}
+
+
+/* socials */
+
+#socialsDiv1 {
+    position: absolute;
+    margin-top: 0px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#socialsDiv1 a {
+    font-size: 30px;
+    color: #d0d0d0;
+    transition: 0.1s;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#socialsDiv1 a:hover {
+    color: #202020;
+    background-color: #d0d0d0;
+}
+
+
+/*general card*/
+
+#loginCard {
+    width: 650px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    border-radius: 6px;
+    background: url(ab.jpeg);
+    background-size: cover;
+}
+
+
+/* white part */
+
+#userCredentialsDiv {
+    border-radius: 5px;
+    background-color: #d0d0d0;
+    backdrop-filter: opacity(50%);
+    width: 70%;
+    height: 85%;
+    margin-left: 25px;
+}
+
+
+/* button home */
+
+#homeLink {
+    height: 22%;
+}
+
+#homeLink div {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#homeButton {
+    width: 40px;
+    height: 35px;
+    font-size: 25px;
+    transition: 0.1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #202020;
+}
+
+#homeButton:hover {
+    background-color: #202020;
+    color: #d0d0d0;
+    border-radius: 10px;
+}
+
+
+/* all that isn't home button */
+
+#allButNoHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* user and psw input fields */
+
+#inputLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#usernameInput {
+    height: 50px;
+    width: 300px;
+    background-color: #202020;
+    color: white;
+    box-shadow: 3px 3px 5px 1px #404040;
+    width: 300px;
+    height: 50px;
+}
+
+#inputLinks>#div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#passwordInput {
+    height: 50px;
+    width: 190px;
+    background-color: #202020;
+    color: white;
+    box-shadow: 3px 3px 5px 1px #404040;
+}
+
+#img1 {
+    width: 6.5%;
+    margin-left: 10px;
+    border: solid 1px #DFDFDF;
+    background-color: #DFDFDF;
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 1px #d0d0d0;
+    filter: invert(100%);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+#img1:hover {
+    background-color: #d0d0d0;
+    border: solid 1px #d0d0d0;
+    box-shadow: 3px 3px 5px 1px #404040;
+    filter: invert(0%);
+}
+
+
+/* forgot pswd and remember me buttons */
+
+#bottomLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+
+/* login button */
+
+#loginButtonDiv {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+#loginButtonDiv div {
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #181818;
+    box-shadow: 3px 3px 5px 1px #101010;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+}
+
+#loginButtonDiv div:hover {
+    background-color: #ab5c16;
+}
+
+#loginButtonDiv div:hover a {
+    color: black;
+}
+
+#loginButtonDiv div a {
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 780px) {
+    #socialsDiv1 {
+        position: absolute;
+        margin-top: 600px;
+        left: 40%;
+        display: flex;
+        flex-direction: row;
+    }
+    #loginCard {
+        width: 450px;
+        height: 300px;
+    }
+    #usernameInput {
+        height: 40px !important;
+        width: 210px !important;
+        background-color: #202020;
+        color: white;
+        box-shadow: 3px 3px 5px 1px #404040;
+        width: 300px;
+        height: 50px;
+    }
+    #passwordInput {
+        height: 40px;
+        width: 150px;
+        background-color: #202020;
+        color: white;
+        box-shadow: 3px 3px 5px 1px #404040;
+    }
+    #bottomLinks {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+}

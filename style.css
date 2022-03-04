@@ -1,261 +1,365 @@
-html {
-    height: 100%;
-    font-family: serif;
-}
-
-body {
-    background-image: url(library.jpg);
-    backdrop-filter: blur(10px);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    color: white;
-    font-family: serif;
-    cursor: default;
-}
-
-#generalCard {
-    width: 1000px;
-    height: 700px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    background-image: url(library.jpg);
-    background-size: contain;
-    box-shadow: 0px 0px 10px 10px #282828;
-}
-
-#card1 {
-    width: 30%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-#brown {
-    background-color: #ab5c16;
-    width: 300px;
-    height: 95%;
-    border-radius: 5px;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    color: #181818;
-    margin-left: 15px;
-}
-
-#presentationDiv {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 40px;
-}
-
-#presentationDiv div {
-    width: 70%;
-    margin-left: 10px;
-}
-
-#presentationDiv div p {
-    font-family: serif;
-    text-align: center;
-    margin-bottom: 80px;
-}
-
-#titleContainer {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-#redTitleDiv {
-    width: auto;
-    font-size: 30px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-}
-
-#redTitleDiv>#div1 p {
-    font-size: 50px;
-    margin: 0%;
-    margin-bottom: 15px;
-}
-
-#redTitleDiv>#div2 {
-    display: flex;
-    justify-content: flex-end;
-}
-
-#redTitleDiv>#div2 p {
-    margin: 0;
-    margin-bottom: 40px;
-}
-
-#div1 p span {
-    color: white;
-}
-
-#div2 p span {
-    color: white;
-}
-
-#card2 {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-#blackPart {
-    width: 100%;
-    height: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#blackPart>#div1 {
-    width: 40%;
-    height: 35%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#blackPart>#div1>#pForDiv1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 160px;
-    backdrop-filter: blur(3px);
-    padding: 20px;
-    padding-right: 40px;
-    padding-left: 0;
-    border-radius: 5px;
-    border: solid 1px white;
-}
-
-#blackPart>#div1>#pForDiv1 p {
-    font-size: 50px;
-    margin: 0;
-}
-
-#blackPart>#div1>#pForDiv1>#p2 {
-    margin-left: 30px;
-}
-
-#blackPart>#div1>#pForDiv1>#p3 {
-    margin-left: 80px;
-}
-
-#blackPart>#div2 {
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    gap: 0px;
-    flex-direction: column;
-    margin-bottom: 100px;
-}
-
-#blackPart>#div2 div {
-    margin-top: -10px;
-    margin-right: 20px;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 30px;
-    height: 30px;
-    transition: 0.1s;
-}
-
-#userPic {
-    transition: 0.1s;
-}
-
-#blackPart>#div2 div:hover>#userPic {
-    background-color: #202020;
-    color: white;
-}
-
-#blackPart>#div3 {
-    width: 100%;
-    height: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#blackPart>#div3 button {
-    height: 50px;
-    width: 100px;
-    border-radius: 5px;
-    border: solid 1px white;
-    font-size: 20px;
-    font-family: serif;
-    margin-bottom: 50px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-#blackPart>#div3 button:hover {
-    width: 120px;
-    height: 70px;
-    color: white;
-    background-color: #202020;
-    border: none;
-    font-size: 22px;
-}
-
-#socialsDiv1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
-    margin-top: 50px;
-}
-
-#socialsDiv2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.fa {
-    padding: 10px;
-    padding-left: 0px;
-    padding-right: 0px;
-    font-size: 30px;
-    width: 35px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    transition: 0.1s;
-    background: white;
-    color: #202020;
-}
-
-.fa:hover {
-    background: #202020;
-    color: white;
-}
+        html {
+            height: 100%;
+            font-family: serif;
+        }
+        
+        body {
+            background-image: url(library.jpg);
+            backdrop-filter: blur(10px);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            color: white;
+            font-family: serif;
+            cursor: default;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        #generalCard {
+            width: 65%;
+            height: 85%;
+            border-radius: 5px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            background-image: url(library.jpg);
+            background-size: contain;
+            box-shadow: 0px 0px 10px 10px #282828;
+        }
+        
+        #card1 {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        
+        #brown {
+            background-color: #ab5c16;
+            width: 100%;
+            height: 95%;
+            border-radius: 5px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            color: #181818;
+            margin-left: 15px;
+        }
+        
+        #presentationDiv {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 40px;
+        }
+        
+        #presentationDiv div {
+            width: 70%;
+            margin-left: 10px;
+        }
+        
+        #presentationDiv div p {
+            font-family: serif;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        #titleContainer {
+            width: 100%;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        
+        #redTitleDiv {
+            width: auto;
+            font-size: 30px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+        
+        #redTitleDiv>#div1 p {
+            font-size: 50px;
+            margin: 0%;
+            margin-bottom: 15px;
+        }
+        
+        #redTitleDiv>#div2 {
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        #redTitleDiv>#div2 p {
+            margin: 0;
+            margin-bottom: 40px;
+        }
+        
+        #div1 p span {
+            color: white;
+        }
+        
+        #div2 p span {
+            color: white;
+        }
+        
+        #card2 {
+            width: 70%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
+        #blackPart {
+            width: 100%;
+            height: 95%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        #blackPart>#div1 {
+            width: 40%;
+            height: 35%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        #blackPart>#div1>#pForDiv1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 160px;
+            height: auto;
+            backdrop-filter: blur(3px);
+            padding: 20px;
+            padding-right: 40px;
+            padding-left: 0;
+            border-radius: 5px;
+            border: solid 1px white;
+        }
+        
+        #blackPart>#div1>#pForDiv1 p {
+            font-size: 50px;
+            margin: 0;
+        }
+        
+        #blackPart>#div1>#pForDiv1>#p2 {
+            margin-left: 30px;
+        }
+        
+        #blackPart>#div1>#pForDiv1>#p3 {
+            margin-left: 80px;
+        }
+        
+        #blackPart>#div2 {
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            gap: 0px;
+            flex-direction: column;
+            margin-bottom: 100px;
+        }
+        
+        #blackPart>#div2 div {
+            margin-top: -10px;
+            margin-right: 20px;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 30px;
+            height: 30px;
+            transition: 0.1s;
+        }
+        
+        #userPic {
+            transition: 0.1s;
+        }
+        
+        #blackPart>#div2 div:hover>#userPic {
+            background-color: #202020;
+            color: white;
+        }
+        
+        #blackPart>#div3 {
+            width: 100%;
+            height: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #blackPart>#div3 a {
+            height: 50px;
+            width: 100px;
+            border-radius: 5px;
+            border: solid 1px white;
+            background-color: white;
+            font-size: 20px;
+            font-family: serif;
+            margin-bottom: 50px;
+            cursor: pointer;
+            transition: 0.2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #202020;
+        }
+        
+        #blackPart>#div3 a:hover {
+            width: 120px;
+            height: 70px;
+            color: white;
+            background-color: #202020;
+            border: none;
+            font-size: 22px;
+        }
+        
+        #socialsDiv1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+            margin-top: 50px;
+        }
+        
+        #socialsDiv2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .fa {
+            padding: 10px;
+            padding-left: 0px;
+            padding-right: 0px;
+            font-size: 30px;
+            width: 35px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+            transition: 0.1s;
+            background: white;
+            color: #202020;
+        }
+        
+        .fa:hover {
+            background: #202020;
+            color: white;
+        }
+        
+        @media only screen and (max-width: 1300px) {
+            #redTitleDiv>#div1 p {
+                font-size: 40px;
+                margin: 0%;
+                margin-bottom: 15px;
+            }
+            #redTitleDiv {
+                font-size: 25px;
+            }
+            #presentationDiv div p {
+                margin-bottom: 40px;
+            }
+            #card1 {
+                width: 60%;
+                height: 100%;
+            }
+        }
+        
+        @media only screen and (max-width: 780px) {
+            #socialsDiv1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 10px;
+                margin-top: 20px;
+            }
+            #socialsDiv2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 10px;
+                margin-top: 15px;
+            }
+            #blackPart>#div1>#pForDiv1 {
+                width: 80px;
+                padding: 5px;
+                padding-left: 0;
+                padding-right: 40px;
+                border-radius: 5px;
+                border: solid 1px white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #blackPart>#div1>#pForDiv1 p {
+                font-size: 25px;
+            }
+            .fa {
+                padding: 10px;
+                padding-left: 0px;
+                padding-right: 0px;
+                font-size: 20px;
+                width: 35px;
+            }
+            p {
+                font-size: 13px;
+            }
+            #redTitleDiv>#div2 p {
+                font-size: 18px;
+            }
+            #redTitleDiv>#div1 p {
+                font-size: 28px;
+                margin: 0%;
+                margin-bottom: 15px;
+            }
+            #blackPart>#div3 a {
+                height: 40px;
+                width: 50px;
+                font-size: 15px;
+                font-family: serif;
+                margin-bottom: 50px;
+                cursor: pointer;
+                transition: 0.2s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #202020;
+            }
+            @media only screen and (max-width: 550px) {
+                #card1 {
+                    width: 100%;
+                }
+                #blackPart>#div1>#pForDiv1 {
+                    width: 50px;
+                }
+                #blackPart>#div1>#pForDiv1 p {
+                    font-size: 15px;
+                }
+            }
+        }
